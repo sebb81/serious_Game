@@ -45,11 +45,10 @@ def run():
         },
         {
             "key": "mission5",
-            "title": "Mission 5 — Audio (bientôt)",
-            "desc": "Reconnaissance vocale / micro (à venir).",
+            "title": "Mission 5 — Audio",
+            "desc": "Reconnaissance vocale / micro.",
             "icon": "🎤",
-            "page": None,
-            "coming_soon": True,
+            "page": "mission5"
         },
     ]
 

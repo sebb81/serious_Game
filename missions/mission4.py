@@ -368,5 +368,5 @@ def run():
         _unlock_badge_once()
 
     st.divider()
-    if st.button("Aller à la conclusion ➡️"):
-        st.session_state.page = "conclusion"
+    if st.button("Accueil ➡️"):
+        st.session_state.page = "introduction"

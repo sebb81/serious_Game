@@ -7,6 +7,7 @@ BADGES = {
     "mission2": {"title": "Émotion", "emoji": "😊"},
     "mission3": {"title": "Chatbot", "emoji": "💬"},
     "mission4": {"title": "RAG", "emoji": "📚"},
+    "mission5": {"title": "Audio", "emoji": "🎙️"},
 }
 
 

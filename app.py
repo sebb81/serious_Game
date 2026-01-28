@@ -12,6 +12,7 @@ import missions.mission1 as mission1
 import missions.mission2 as mission2
 import missions.mission3 as mission3
 import missions.mission4 as mission4
+import missions.mission5 as mission5
 import missions.conclusion as conclusion
 
 # Configuration de la page (titre de l'onglet, icône, etc.)
@@ -43,5 +44,7 @@ elif st.session_state.page == "mission3":
     mission3.run()
 elif st.session_state.page == "mission4":
     mission4.run()
+elif st.session_state.page == "mission5":
+    mission5.run()
 elif st.session_state.page == "conclusion":
     conclusion.run()

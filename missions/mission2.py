@@ -191,6 +191,8 @@ def run():
         st.session_state.mission2_balloons = False
     if "mission2_completed" not in st.session_state:
         st.session_state.mission2_completed = False
+    if "m2_badge_unlocked" not in st.session_state:
+        st.session_state.m2_badge_unlocked = False
 
     st.subheader("Détection en direct")
 
