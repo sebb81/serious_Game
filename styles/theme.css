@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap");
+
+:root {
+  --bg-1: #0c1220;
+  --bg-2: #121a2e;
+  --panel: #1a2a44;
+  --panel-2: #203356;
+  --accent: #4da3ff;
+  --accent-2: #2fd07b;
+  --text: #e6eefc;
+  --muted: #9fb1cf;
+  --border: rgba(120, 160, 220, 0.25);
+  --glow: 0 10px 30px rgba(10, 20, 40, 0.45);
+}
+
+html, body, [class*="stApp"] {
+  font-family: "Sora", "Space Grotesk", sans-serif;
+  color: var(--text);
+}
+
+.stApp {
+  background: radial-gradient(1200px 800px at 60% -200px, #0c131f 0%, var(--bg-2) 45%, var(--bg-1) 100%);
+}
+
+[data-testid="stHeader"] {
+  background: transparent;
+}
+
+[data-testid="stAppViewContainer"] > .main {
+  padding-top: 1.5rem;
+}
+
+.block-container {
+  background-color: rgb(18, 37, 67);
+  max-width: 1200px;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Space Grotesk", "Sora", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  font-size: clamp(28px, 3.2vw, 42px);
+}
+
+section[data-testid="stSidebar"] {
+  background: linear-gradient(180deg, #1a2030 0%, #161c2b 100%);
+  border-right: 1px solid var(--border);
+}
+
+section[data-testid="stSidebar"] * {
+  color: var(--text);
+}
+
+.stMarkdown, .stText, .stCaption, .stWrite {
+  color: var(--text);
+}
+
+.stCaption, .stMarkdown small {
+  color: var(--muted);
+}
+
+div[data-testid="stVerticalBlock"] > div > div > div {
+  border-radius: 14px;
+}
+
+.stButton > button {
+  background: linear-gradient(135deg, #2b4c86, #1f3a6b);
+  border: 1px solid var(--border);
+  color: #eaf2ff;
+  box-shadow: var(--glow);
+  border-radius: 12px;
+  padding: 0.55rem 1.1rem;
+  font-weight: 600;
+}
+
+.stButton > button:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #3560a8, #24457f);
+}
+
+.stButton > button:disabled {
+  background: #1b2233;
+  border-color: rgba(120, 160, 220, 0.15);
+  color: #7d8eb0;
+  box-shadow: none;
+}
+
+.stAlert {
+  background: linear-gradient(180deg, #1b2a46 0%, #16243b 100%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+div[data-testid="stExpander"] {
+  border: 1px solid var(--border);
+  background: rgba(18, 28, 48, 0.6);
+  border-radius: 14px;
+}
+
+div[data-testid="stMetric"] {
+  background: linear-gradient(180deg, #1c2d4c 0%, #1a2a44 100%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.5rem 1rem;
+  box-shadow: var(--glow);
+}
+
+div[data-testid="stMarkdownContainer"] code {
+  background: rgba(23, 33, 55, 0.8);
+  border: 1px solid var(--border);
+  color: #cfe3ff;
+}
+
+.stImage > img {
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--glow);
+}
+
+div[data-testid="stFileUploaderDropzone"] {
+  background: rgba(18, 28, 48, 0.6);
+  border: 1px dashed var(--border);
+}
+
+/* Cartes missions */
+.mission-card {
+  background: linear-gradient(180deg, #1c2f52 0%, #172742 100%);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  min-height: 210px;
+  box-shadow: var(--glow);
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-card-header {
+  background: linear-gradient(180deg, rgba(77, 163, 255, 0.25) 0%, rgba(77, 163, 255, 0.05) 100%);
+  padding: 0.9rem 1.1rem 0.7rem 1.1rem;
+  border-bottom: 1px solid rgba(120, 160, 220, 0.25);
+}
+
+.mission-header-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.mission-card-body {
+  padding: 0.9rem 1.1rem 1.1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.mission-card.done {
+  border-color: rgba(47, 208, 123, 0.6);
+  box-shadow: 0 10px 30px rgba(20, 70, 40, 0.35);
+}
+
+.mission-icon {
+  font-size: 28px;
+}
+
+.mission-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.mission-desc {
+  color: var(--muted);
+  font-size: 0.92rem;
+  min-height: 3.4rem;
+}
+
+.mission-status {
+  margin-top: auto;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.mission-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #6c7fa3;
+  box-shadow: 0 0 0 2px rgba(20, 30, 50, 0.5);
+}
+
+.mission-dot-done {
+  background: #2fd07b;
+  box-shadow: 0 0 0 2px rgba(47, 208, 123, 0.25);
+}
+
+.mission-dot-locked {
+  background: #5b6275;
+}
+
+.mission-dot-pending {
+  background: #9fb1cf;
+}
+
+/* Bouton "Commencer" pleine largeur sous chaque carte */
+div[data-testid="stMarkdown"]:has(.mission-card) + div[data-testid="stButton"] > button {
+  width: 100%;
+  border-radius: 12px;
+}
+
+button[kind="primary"] {
+  background: linear-gradient(135deg, #2f8bff, #1b5fe0);
+  border-color: rgba(47, 139, 255, 0.5);
+}
+
+button[kind="primary"]:hover {
+  background: linear-gradient(135deg, #4da3ff, #2575ff);
+}

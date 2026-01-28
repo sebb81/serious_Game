@@ -1,0 +1,8 @@
+streamlit           # Framework web pour l'application interactive
+mediapipe==0.10.21      # Bibliothèque MediaPipe pour détection de gestes/visage (CPU)
+opencv-python==4.11.0.86  # Dépendance explicite pour MediaPipe/annot. mains
+numpy<2                 # Compatibilité mediapipe/opencv (évite NumPy 2.x)
+streamlit-webrtc    # Caméra en direct via WebRTC
+llama-cpp-python        # Interface Python pour exécuter des modèles LLM avec llama.cpp (CPU)
+# langchain        # (Optionnel) Pour chaîne RAG locale (si utilisation d'une base documentaire)
+# faiss-cpu        # (Optionnel) Index vectoriel pour la recherche de documents locale

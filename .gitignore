@@ -1,0 +1,7 @@
+*.exe
+/.venv/
+/.vscode/
+/models/
+/python/
+eco_index.pkl
+__pycache__/
